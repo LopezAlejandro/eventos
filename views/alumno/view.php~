@@ -1,22 +1,24 @@
 <?php
 
 use yii\helpers\Html;
+use yii\widgets\DetailView;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
-/* @var $this yii\web\View */
-/* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Alumnos';
+/* @var $this yii\web\View */
+/* @var $model app\models\Alumno */
+
+$this->title = $model->id_alumno;
+$this->params['breadcrumbs'][] = ['label' => 'Alumnos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
+\yii\web\YiiAsset::register($this);
 ?>
-<div class="alumno-index">
+<div class="alumno-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>
-        <?= Html::a('Create Alumno', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
-
+	 <p><br></p>
+   
     <?php Pjax::begin(); ?>
 
     <?= GridView::widget([
@@ -24,15 +26,14 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id_alumno',
+           // 'id_alumno',
             'nombre',
             'mail',
-            //'passw',
+//            'passw',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
 
     <?php Pjax::end(); ?>
-
 </div>

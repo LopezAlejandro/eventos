@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'id_alumno',
             'nombre',
             'mail',
-            //'passw',
+            'passw',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

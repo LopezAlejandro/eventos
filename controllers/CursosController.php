@@ -52,9 +52,14 @@ class CursosController extends Controller
      */
     public function actionView($id)
     {
-        return $this->render('view', [
-            'model' => $this->findModel($id),
+        $dataProvider = new ActiveDataProvider([
+        		'query' => Cursos::find()->where(['id_curso' => $id]),
         ]);
+        
+        return $this->render('view', [
+            'dataProvider' => $dataProvider,
+        ]);
+
     }
 
     /**

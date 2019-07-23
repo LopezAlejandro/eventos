@@ -10,7 +10,7 @@ use yii\widgets\ActiveForm;
 
 <div class="alumno-form">
 
-    <?php $form = ActiveForm::begin(['options'=>['style'=>'width:500px;margin:0px auto;']]); ?>
+    <?php $form = ActiveForm::begin('options'=>['style'=>'width:500px;margin:0px auto;']); ?>
 
     <?= $form->field($model, 'nombre')->textInput(['maxlength' => true,'size' => 40]) ?>
 

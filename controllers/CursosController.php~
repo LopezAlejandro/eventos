@@ -3,16 +3,16 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\Alumno;
+use app\models\Cursos;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * AlumnoController implements the CRUD actions for Alumno model.
+ * CursosController implements the CRUD actions for Cursos model.
  */
-class AlumnoController extends Controller
+class CursosController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -30,13 +30,13 @@ class AlumnoController extends Controller
     }
 
     /**
-     * Lists all Alumno models.
+     * Lists all Cursos models.
      * @return mixed
      */
     public function actionIndex()
     {
         $dataProvider = new ActiveDataProvider([
-            'query' => Alumno::find(),
+            'query' => Cursos::find(),
         ]);
 
         return $this->render('index', [
@@ -45,35 +45,38 @@ class AlumnoController extends Controller
     }
 
     /**
-     * Displays a single Alumno model.
+     * Displays a single Cursos model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
     public function actionView($id)
     {
-        
-       $dataProvider = new ActiveDataProvider([
-        		'query' => Alumno::find()->where(['id_alumno' => $id]),
+        $dataProvider = new ActiveDataProvider([
+        		'query' => Cursos::find()->where(['id_curso' => $id]),
         ]);
         
         return $this->render('view', [
             'dataProvider' => $dataProvider,
-        ]); 
+        ]);
         
+/**        return $this->render('view', [
+            'model' => $this->findModel($id),
+        ]);
+*/        
     }
 
     /**
-     * Creates a new Alumno model.
+     * Creates a new Cursos model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Alumno();
+        $model = new Cursos();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id_alumno]);
+            return $this->redirect(['view', 'id' => $model->id_curso]);
         }
 
         return $this->render('create', [
@@ -82,7 +85,7 @@ class AlumnoController extends Controller
     }
 
     /**
-     * Updates an existing Alumno model.
+     * Updates an existing Cursos model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -93,7 +96,7 @@ class AlumnoController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id_alumno]);
+            return $this->redirect(['view', 'id' => $model->id_curso]);
         }
 
         return $this->render('update', [
@@ -102,7 +105,7 @@ class AlumnoController extends Controller
     }
 
     /**
-     * Deletes an existing Alumno model.
+     * Deletes an existing Cursos model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -116,15 +119,15 @@ class AlumnoController extends Controller
     }
 
     /**
-     * Finds the Alumno model based on its primary key value.
+     * Finds the Cursos model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Alumno the loaded model
+     * @return Cursos the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Alumno::findOne($id)) !== null) {
+        if (($model = Cursos::findOne($id)) !== null) {
             return $model;
         }
 

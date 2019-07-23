@@ -52,15 +52,9 @@ class AlumnoController extends Controller
      */
     public function actionView($id)
     {
-        
-       $dataProvider = new ActiveDataProvider([
-        		'query' => Alumno::find()->where(['id_alumno' => $id]),
-        ]);
-        
         return $this->render('view', [
-            'dataProvider' => $dataProvider,
-        ]); 
-        
+            'model' => $this->findModel($id),
+        ]);
     }
 
     /**

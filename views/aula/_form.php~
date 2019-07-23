@@ -13,11 +13,11 @@ use yii\helpers\ArrayHelper;
 
     <?php $form = ActiveForm::begin(); ?>
 	 <?php $cursos_name = ArrayHelper::map(\app\models\Cursos::find()->orderBy('nombre')->all(), 'id_curso', 'nombre') ?>
-    <?php $alumno_name = ArrayHelper::map(\app\models\Alumno::find()->orderBy('nombre')->all(), 'id_alumno', 'nombre') ?>
     
+    <?= $form->field($model, 'id_curso')->textInput() ?>
     <?= $form->field($model, 'id_curso')->dropDownList($cursos_name, ['prompt' => '---- Elija una charla ----'])->label('Nombre del curso') ?>    
-    <?= $form->field($model, 'id_alumno')->dropDownList($alumno_name, ['prompt' => '---- Elija un alumno ----'])->label('Nombre del Alumno') ?>
-  
+    <?= $form->field($model, 'id_alumno')->textInput() ?>
+
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
     </div>

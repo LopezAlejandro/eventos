@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use yii\grid\GridView;
+use yii\widgets\Pjax;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Cursos */
@@ -25,10 +27,17 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         ]) ?>
     </p>
+<!--
+    
+    
+-->    
+    <?php Pjax::begin(); ?>
 
-    <?= DetailView::widget([
-        'model' => $model,
-        'attributes' => [
+    <?= GridView::widget([
+        'dataProvider' => $dataProvider,
+        'columns' => [
+            ['class' => 'yii\grid\SerialColumn'],
+
            // 'id_curso',
             'nombre',
             'orador',
@@ -36,7 +45,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'fecha_fin',
             'hora_ini',
             'hora_fin',
+
+            ['class' => 'yii\grid\ActionColumn'],
         ],
-    ]) ?>
+    ]); ?>
+
+    <?php Pjax::end(); ?>
 
 </div>
