@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use yii\grid\GridView;
+use yii\widgets\Pjax;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Aula */
@@ -16,23 +18,37 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'id' => $model->id_aula], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->id_aula], [
-            'class' => 'btn btn-danger',
-            'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
-                'method' => 'post',
-            ],
-        ]) ?>
+        
     </p>
 
-    <?= DetailView::widget([
-        'model' => $model,
-        'attributes' => [
-            'id_aula',
-            'id_curso',
-            'id_alumno',
+    <?php Pjax::begin(); ?>
+
+    <?= GridView::widget([
+        'dataProvider' => $dataProvider,
+        'columns' => [
+            ['class' => 'yii\grid\SerialColumn'],
+
+            //'id_aula',
+            //'id_curso',
+            [   
+                'attribute' => 'curso',
+                'label' => 'Curso',
+                'value' => function ($data) {
+                return $data->curso->nombre;
+            }
+            ],  
+            //'id_alumno',
+            [   
+                'attribute' => 'nombre',
+                'label' => 'Nombre',
+                'value' => function ($data) {
+                return $data->alumno->nombre;
+            }
+            ],  
+            ['class' => 'yii\grid\ActionColumn'],
         ],
-    ]) ?>
+    ]); ?>
+
+    <?php Pjax::end(); ?>
 
 </div>

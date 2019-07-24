@@ -25,9 +25,22 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             //'id_aula',
-            'getCurso.nombre',
-            'getAlumno.nombre',
-
+            //'id_curso',
+            [   
+                'attribute' => 'curso',
+                'label' => 'Curso',
+                'value' => function ($data) {
+                return $data->curso->nombre;
+            }
+            ],  
+            //'id_alumno',
+            [   
+                'attribute' => 'nombre',
+                'label' => 'Nombre',
+                'value' => function ($data) {
+                return $data->alumno->nombre;
+            }
+            ],  
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>

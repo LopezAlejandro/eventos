@@ -4,6 +4,8 @@ namespace app\controllers;
 
 use Yii;
 use app\models\Aula;
+use app\models\Alumno;
+use app\models\Cursos;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -52,9 +54,14 @@ class AulaController extends Controller
      */
     public function actionView($id)
     {
-        return $this->render('view', [
-            'model' => $this->findModel($id),
+        $dataProvider = new ActiveDataProvider([
+                'query' => Aula::find()->where(['id_aula' => $id]),
         ]);
+        
+        return $this->render('view', [
+            'dataProvider' => $dataProvider,
+        ]); 
+        
     }
 
     /**

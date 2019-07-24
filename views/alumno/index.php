@@ -29,7 +29,16 @@ $this->params['breadcrumbs'][] = $this->title;
             'mail',
             //'passw',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => 'yii\grid\ActionColumn',
+                'template' => '{update} {delete} {certificado}',
+                'buttons' =>
+                    [
+                        'certificado' => function ($url,$model, $key) {
+                            return Html::a ( '<span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> ', ['controller/action', 'id' => $model->id_alumno] );
+                        }
+                    ]
+            ],
         ],
     ]); ?>
 
