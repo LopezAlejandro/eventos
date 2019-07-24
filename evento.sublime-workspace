@@ -1,0 +1,280 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "views/alumno/create.php",
+			"settings":
+			{
+				"buffer_size": 411,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"git:remote",
+				"Git: Remote"
+			],
+			[
+				"git:status",
+				"Git: Status"
+			],
+			[
+				"git:ini",
+				"Git: Init"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/home/ale/servidores.txt",
+		"/home/ale/.cache/.fr-0sr50D/registration_package/READ ME.txt",
+		"/home/ale/Documentos/lista-revistas.txt",
+		"/home/ale/prueba",
+		"/home/ale/Documentos/lista.txt",
+		"/home/ale/.cache/.fr-Sxze3E/DVWA-master/README.md",
+		"/home/ale/sshguard.txt",
+		"/home/ale/Descargas/mcmtest_activate_4medianav.ini",
+		"/home/ale/.cache/.fr-GgPQMm/article.txt",
+		"/run/user/1000/gvfs/smb-share:server=biblio-nas.local,share=programas/pepe.txt",
+		"/home/ale/INICIATIVA.text",
+		"/home/ale/.config/termite/themes/arcolinux-kraken.config",
+		"/home/ale/.config/termite/config",
+		"/home/ale/.config/termite/config-backup",
+		"/home/ale/.config/terminator/config",
+		"/home/ale/.config/termite/themes/arcolinux-dracula.config",
+		"/home/ale/a distribu.text",
+		"/home/ale/neda del F.text",
+		"/home/ale/MODIFICO L.text",
+		"/home/ale/Escritorio/enp0s25",
+		"/home/ale/Documentos/pagina14444.txt",
+		"/home/ale/Escritorio/ale",
+		"/home/ale/.cache/.fr-5rFTkR/fae88a2f5570ab22da53-dc7afa3d69b98bf2d6ea1e74ecba7864deaa44f1/radios_nacionales.txt",
+		"/home/ale/.cache/.fr-lGFxR8/pkg-1551456001.txt",
+		"/home/ale/.backup-list",
+		"/home/ale/Escritorio/pacman",
+		"/home/ale/.cache/.fr-exLATM/febrero-2019/05-DotNavigationStyles/DotNavigationStyles/README.md",
+		"/home/ale/.cache/.fr-nP1Y9q/febrero-2019/04-TripleViewLayout/README.md",
+		"/home/ale/.cache/.fr-TlqMK2/febrero-2019/03-MotionBlurEffect/README.md",
+		"/home/ale/.cache/.fr-aFbOCH/febrero-2019/02-AnimatedGridLayout/README.md",
+		"/home/ale/.cache/.fr-IuEcIu/febrero-2019/01-CardExpansion/README.md",
+		"/home/ale/.cache/.fr-mI21xA/14-FullscreenBookBlock/FullscreenBookBlock/README.txt",
+		"/usr/share/applications/google-chrome.desktop",
+		"/home/ale/.cache/.fr-BHzJeZ/vnstat-code.txt",
+		"/home/ale/.cache/.fr-l4Jz8I/11-DynamicGrid/DynamicGrid/README.md",
+		"/home/ale/.cache/.fr-I9HUX5/14-FullscreenBookBlock/FullscreenBookBlock/README.txt",
+		"/home/ale/.cache/.fr-ShZjb3/02-3DBookShowcase/3DBookShowcase/README.txt",
+		"/home/ale/.cache/.fr-fBGFiu/06-BookBlock/BookBlock/README.md",
+		"/home/ale/.cache/.fr-LKqKtd/07-BookPreview/BookPreview/README.md",
+		"/home/ale/.cache/.fr-RfBh35/pkg-1543680001.txt",
+		"/home/ale/Escritorio/Debian - proxy",
+		"/home/ale/Dropbox/vbox",
+		"/home/ale/Dropbox/manjaro-dropbox",
+		"/home/ale/Dropbox/sincro-nodo1.sh",
+		"/home/ale/.config/plank/dock1/launchers/sublime_text_3.dockitem",
+		"/home/ale/.config/plank/dock1/launchers/terminator.dockitem",
+		"/home/ale/.config/plank/dock1/launchers/com.uploadedlobster.peek.dockitem",
+		"/home/ale/.cache/.fr-fugh82/.conkyrc",
+		"/home/ale/.cache/.fr-TeaCAf/DVWA-master/README.md",
+		"/home/ale/Descargas/PP4650PPDLinux_1000/Spanish/Spanish.txt",
+		"/home/ale/handmaid/The.Handmaid's.Tale.S02E12.Postpartum.srt",
+		"/home/ale/Escritorio/vmw-kvm.txt",
+		"/run/media/ale/ROOT_MANJARO/etc/pacman.conf",
+		"/run/media/ale/ROOT_MANJARO/etc/environment",
+		"/run/media/ale/ROOT_MANJARO/etc/netctl/enp0s25",
+		"/run/media/ale/ROOT_MANJARO/etc/NetworkManager/NetworkManager.conf",
+		"/run/media/ale/HOME_MANJARO/ale/servidores.txt",
+		"/run/media/ale/ROOT_MANJARO/etc/NetworkManager/system-connections/Conexión cableada 1",
+		"/run/media/ale/ROOT_MANJARO/var/spool/cron/ale"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"https://terminal.sexy"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "views/alumno/create.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 411,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "evento.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
